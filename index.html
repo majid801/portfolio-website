@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Weather Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #83a4d4, #b6fbff);
+      padding: 40px;
+    }
+    h1 {
+      color: #fff;
+    }
+    input {
+      padding: 10px;
+      width: 200px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    #weatherResult {
+      margin-top: 30px;
+      font-size: 18px;
+      background: #ffffffaa;
+      display: inline-block;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌦️ Live Weather Dashboard</h1>
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+  <button onclick="fetchWeather()">Get Weather</button>
+  <div id="weatherResult"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
